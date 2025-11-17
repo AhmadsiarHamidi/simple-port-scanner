@@ -1,7 +1,7 @@
 import socket
 
-HOST = "127.8.0.1"
-PORT = 5000  # you can change this to any port > 1024
+HOST = "127.0.0.1"
+PORT = 80  # you can change this to any port > 1024
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
