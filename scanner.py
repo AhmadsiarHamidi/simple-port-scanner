@@ -71,18 +71,15 @@ def scan_range(target, start_port, end_port, results_file_path="scan_results.txt
     print(f"\n[*] Scanning {target} from port {start_port} to {end_port} ...\n")
 
     # Open (or create) a text file to save scan results. "w" stands for write mode
-    results_file = open(results_file_path, "w", encoding="utf-8")
+    results_file = open(results_file_path, "w")
     results_file.write(f"Scan results for {target} (ports {start_port}-{end_port})\n")
-    results_file.write("-" * 50 + "\n")
-
     for port in range(start_port, end_port + 1):
         service = scan_port(target, port)
-
         if service is not None:
             message = f"[+] Port {port} is OPEN  -->  {service}"
             print(message)
             results_file.write(message + "\n")
-
+    results_file.write("-" * 50 + "\n")
     results_file.close()
     print("\n[*] Scan finished.")
     print(f"[*] Results saved to {results_file_path}")
