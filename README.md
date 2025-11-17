@@ -92,20 +92,14 @@ Enter end port: 100
 [*] Scan finished.
 [*] Results saved to scan_results.txt
 
-My experience and learning
+## My experience and learning
 
-Working on this simple TCP port scanner was a great way to understand how networks and sockets work. I learned step by step:
-
-How to create sockets in Python and use them for communication.
-
-The difference between TCP (reliable) and UDP (unreliable).
-
-What common ports are and how services run on them.
-
-How to scan a range of ports safely using 127.0.0.1 for testing.
-
-How to write results to a file and organize code with functions.
-
-This project helped me practice Python in a cybersecurity context and gave me confidence to explore more advanced networking and security topics.
+> Working on this simple TCP port scanner was a great way to understand how networks and sockets work. I learned step by step:
+> How to create sockets in Python and use them for communication.
+> The difference between TCP (reliable) and UDP (unreliable).
+> What common ports are and how services run on them.
+> How to scan a range of ports safely using 127.0.0.1 for testing.
+> How to write results to a file and organize code with functions.
+> This project helped me practice Python in a cybersecurity context and gave me confidence to explore more advanced networking and security topics.
 
 Finally I’m Ahmadsiar Hamidi, and I’m really interested in cybersecurity. This is just the beginning of my learning journey, and I’m excited to keep exploring and building more projects.
