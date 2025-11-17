@@ -61,45 +61,44 @@ The script uses Python's built-in `socket` library to scan a range of ports on a
 
 1. Make sure you have **Python 3** installed.
 
-2. (Optional) Create and activate a virtual environment.
-
-   ```bash
-   python -m venv venv
+2. (Optional) Create and activate a virtual environment:
+   `python -m venv venv`
 
 On Windows (PowerShell):
-
-`Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
-`venv\Scripts\Activate.ps1`
+  `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+  `venv\Scripts\Activate.ps1`
 
 Run the script:
 `python scanner.py`
 
-Example input:
-Target: 127.0.0.1
-Start port: 20
-End port: 100
+- Example input:
+  - Target: 127.0.0.1
+  - Start port: 20
+  - End port: 100
 
-Example output:
-Enter target to scan (like:-->  127.0.0.1 ): 127.0.0.1
-Enter start port: 20
-Enter end port: 100
+- Example output:
+  - Enter target to scan (like:-->  127.0.0.1 ): 127.0.0.1
+  - Enter start port: 20
+  - Enter end port: 100
 
-[*] Scanning 127.0.0.1 from port 20 to 100 ...
+> [*] Scanning 127.0.0.1 from port 20 to 100 ...
 
-[+] Port 21 is OPEN  -->  FTP
-[+] Port 22 is OPEN  -->  SSH
+> [+] Port 21 is OPEN  -->  FTP
+ 
+> [+] Port 22 is OPEN  -->  SSH
 
-[*] Scan finished.
-[*] Results saved to scan_results.txt
+> [*] Scan finished.
+ 
+> [*] Results saved to scan_results.txt
 
 ## My experience and learning
 
-> Working on this simple TCP port scanner was a great way to understand how networks and sockets work. I learned step by step:
-> How to create sockets in Python and use them for communication.
-> The difference between TCP (reliable) and UDP (unreliable).
-> What common ports are and how services run on them.
-> How to scan a range of ports safely using 127.0.0.1 for testing.
-> How to write results to a file and organize code with functions.
-> This project helped me practice Python in a cybersecurity context and gave me confidence to explore more advanced networking and security topics.
+Working on this simple TCP port scanner was a great way to understand how networks and sockets work. I learned step by step:
+  -  How to create sockets in Python and use them for communication.
+  -  The difference between TCP (reliable) and UDP (unreliable).
+  -  What common ports are and how services run on them.
+  -  How to scan a range of ports safely using 127.0.0.1 for testing.
+  -  How to write results to a file and organize code with functions.
+  -  This project helped me practice Python in a cybersecurity context and gave me confidence to explore more advanced networking and security topics.
 
 Finally I’m Ahmadsiar Hamidi, and I’m really interested in cybersecurity. This is just the beginning of my learning journey, and I’m excited to keep exploring and building more projects.
